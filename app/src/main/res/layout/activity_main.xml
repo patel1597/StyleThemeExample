@@ -15,21 +15,23 @@
         android:layout_margin="@dimen/screenMargin"
         android:gravity="center_horizontal"
         >
+
+        <!--  Here I applied a different style for the
+                EditText than what is applied at the theme level
+            -->
+
         <TextView
+            style="@style/TextViewCustom"
             android:layout_width="@dimen/editTextWidth"
             android:layout_height="@dimen/editTextHeight"
-            android:text="First Name"
             android:paddingTop="@dimen/topPadding"
-            style="@style/TextViewCustom"/>
+            android:text="First Name" />
 
         <EditText
             android:id="@+id/firstName"
-            android:inputType="textCapWords"
             style="@style/EditTextCustom"
-            android:hint="Wonder"/>
-            <!--  Here I applied a different style for the
-                EditText than what is applied at the theme level
-            -->
+            android:hint="Wonder"
+            android:inputType="textCapWords" />
 
         <TextView
             android:layout_width="@dimen/editTextWidth"
@@ -76,12 +78,12 @@
                text color listed for EditText settings applied
                at the theme level -->
 
+
         <TextView
             android:layout_width="@dimen/editTextWidth"
             android:layout_height="@dimen/editTextHeight"
-            android:text="Password"
-            android:paddingTop="@dimen/topPadding"/>
-
+            android:paddingTop="@dimen/topPadding"
+            android:text="Password" />
 
         <EditText
             android:layout_width="@dimen/editTextWidth"
@@ -92,9 +94,9 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
             android:onClick="clickMe"
-            android:text="Click here"
-            android:layout_marginBottom="100dp"/>
+            android:text="Click here" />
 
     </LinearLayout>
 </ScrollView>
